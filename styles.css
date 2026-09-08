@@ -1,0 +1,339 @@
+/* --- Reset Global --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: auto; /* Controlado nativamente por JS */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- Estructura y Secciones --- */
+.seccion-contenedor {
+    padding: 4rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* --- Navegación --- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #111111;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #0071e3;
+}
+
+#toggle-tema {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+/* --- Hero --- */
+#hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #111111;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #111111;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05);
+}
+
+/* --- Sobre mí --- */
+.sobre-mi-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.perfil-foto {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* --- Grid de Proyectos --- */
+.proyectos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta-proyecto {
+    flex: 1 1 280px;
+    background-color: #bee60f;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(206, 218, 218, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-proyecto h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+/* --- Habilidades --- */
+.habilidades-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+/* --- Contacto (Formulario) --- */
+#form-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-grupo {
+    margin-bottom: 1.5rem;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+#form-contacto input,
+#form-contacto textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#form-contacto input:focus,
+#form-contacto textarea:focus {
+    outline: none;
+    border-color: #0071e3;
+    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.2);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 1rem;
+    background-color: #0071e3;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #005bb5;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background-color: #f8f9fa;
+    margin-top: 4rem;
+    border-top: 1px solid #eaeaea;
+}
+
+/* --- Modo Oscuro --- */
+body.dark-mode {
+    background: #1a1a2e;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: rgba(26, 26, 46, 0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .logo {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #4ea8de;
+}
+
+body.dark-mode #hero {
+    background: linear-gradient(135deg, #0f0c20 0%, #16213e 100%);
+}
+
+body.dark-mode #hero h1, 
+body.dark-mode #hero p {
+    color: #ffffff;
+}
+
+body.dark-mode .btn-cta {
+    background-color: #ffffff;
+    color: #1a1a2e;
+}
+
+body.dark-mode .tarjeta-proyecto {
+    background: #16213e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .tag {
+    background-color: #16213e;
+    color: #e0e0e0;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+    background: #16213e;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+body.dark-mode footer {
+    background-color: #111122;
+    border-color: #222244;
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    .sobre-mi-contenido {
+        flex-direction: column;
+    }
+    #hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+    #hero p {
+        font-size: 1.2rem;
+    }
+    .seccion-contenedor {
+        padding: 2.5rem 1rem;
+    }
+}

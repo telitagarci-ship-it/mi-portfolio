@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio — Stella Maris García</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Stella Maris García</a>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button id="toggle-tema" aria-label="Cambiar tema">🌙</button>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Hola, soy Stella Maris García</h1>
+            <p>Desarrolladora Web</p>
+            <a href="#contacto" class="btn-cta">Contactame</a>
+        </section>
+
+        <section id="sobre-mi" class="container"
+            <h2>Sobre Mí</h2> <div class="sobre-mi-contenido">
+               <img src="https://placeholder.com" alt="Foto de perfil de " class="perfil-foto">
+
+    
+               <div class="biografia">
+                    <p>Desde hace tiempo soy desarrolladora, me gusta crear experiencias  interactivas, accesibles y optimizadas. Transformo ideas complejas en diseños limpios utilizando código semántico y moderno.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="proyectos" class="container">
+            <h2>Mis Proyectos</h2>
+            <div class="proyectos-grid">
+                <article class="tarjeta-proyecto">
+                    <div class="proyecto-info">
+                        <h3>App de Joyería</h3>
+                        <p>Una tienda en línea con carrito de compras y pasarela de pago.</p>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="proyecto-info">
+                        <h3>Huertos urbanos</h3>
+                        <p>Aplicación que permite mostrar el estado de los huertos en la ciudad de Tandil.</p>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="proyecto-info">
+                        <h3>Page Interactiva sobre Arte en Tandil</h3>
+                        <p>Sitio web con animaciones fluidas y optimización SEO básica.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades" class="container">
+            <h2>Habilidades</h2>
+            <div class="tags-container">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Git & GitHub</span>
+            </div>
+        </section>
+
+        <section id="contacto" class="container">
+            <h2>Contacto</h2>
+            <form id="form-contacto">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje acá..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Stella Maris García. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
