@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 
 /* --- Estructura y Secciones --- */
-.seccion-contenedor {
+.container {
     padding: 4rem 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -59,6 +59,7 @@ nav {
     font-weight: 700;
     text-decoration: none;
     color: #111111;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -167,7 +168,7 @@ nav {
 }
 
 /* --- Habilidades --- */
-.habilidades-tags {
+.tags-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -189,11 +190,11 @@ nav {
     margin: 0 auto;
 }
 
-.form-grupo {
+.form-group {
     margin-bottom: 1.5rem;
 }
 
-.form-grupo label {
+.form-group label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
@@ -217,7 +218,7 @@ nav {
     box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.2);
 }
 
-.btn-enviar {
+.btn-submit {
     width: 100%;
     padding: 1rem;
     background-color: #0071e3;
@@ -230,7 +231,7 @@ nav {
     transition: background-color 0.2s;
 }
 
-.btn-enviar:hover {
+.btn-submit:hover {
     background-color: #005bb5;
 }
 
@@ -333,7 +334,7 @@ body.dark-mode footer {
     #hero p {
         font-size: 1.2rem;
     }
-    .seccion-contenedor {
+    .container {
         padding: 2.5rem 1rem;
     }
 }
